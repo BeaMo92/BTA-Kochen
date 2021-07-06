@@ -29,6 +29,32 @@ header {
   margin: 5px;
 }
 
+.button {
+  background-color: white;
+  color: #374a67;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 5 5px 13px 0px hsla(0, 0, 0, 0.7);
+  border: 1px solid #374a67;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 16px;
+  display: inline-block;
+  transition: all 378ms;
+}
+.button:hover {
+  background-color: #374a67;
+  color: #fff;
+}
+
+.box {
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5 5px 13px 0px hsla(0, 0, 0, 0.7);
+  margin: 5px;
+}
+
 #headerliste {
   list-style-type: none;
   padding: 0;
@@ -43,9 +69,30 @@ header {
   display: none;
 }
 
+#headernavi.show {
+  display: block;
+}
+
 #burger {
-  background-color: fff;
+  background-color: #fff;
   border: none;
+}
+
+#hero {
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#rezepte {
+  text-align: center;
 }
 
 @media (min-width: 1170px) {
@@ -54,5 +101,8 @@ header {
   }
   #headernavi {
     display: block;
+  }
+  .row {
+    display: flex;
   }
 }
